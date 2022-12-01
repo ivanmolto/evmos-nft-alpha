@@ -125,7 +125,7 @@ const Layout = () => {
                             className="mr-4 flex-shrink-0 h-6 w-6 text-white"
                             aria-hidden="true"
                           />
-                          NFT Token Profiler
+                          NFT Item Profiler
                         </CustomLink>
                       </ul>
                       <ul>
@@ -248,7 +248,7 @@ const Layout = () => {
                       className="mr-4 flex-shrink-0 h-6 w-6 text-white"
                       aria-hidden="true"
                     />
-                    NFT Token Profiler
+                    NFT Item Profiler
                   </CustomLink>
                 </ul>
                 <ul>

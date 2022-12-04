@@ -16,9 +16,30 @@ Unleash your NFT analytics power on Evmos.
 
 ## Overview
 
-![](https://ivanmolto.mypinata.cloud/ipfs/QmUXAuVFJAbhrMs6AUqWr2sVjRvnMySyY5Jgs6mbwJ1AoW)
+### Home
 
-## Covalent API endpoints
+![](https://ivanmolto.mypinata.cloud/ipfs/QmVcC3vnFyyVu44yWQvQDeyBEJaAfV74bMVM84SwYKsH4E)
+
+### NFT Market Overview
+
+![](https://ivanmolto.mypinata.cloud/ipfs/QmPETRBxrTjTfx4e2u9mFWehba8n638rME3rrnNA8s4CQK)
+
+### NFT Collection Profiler
+
+![](https://ivanmolto.mypinata.cloud/ipfs/QmcY9yrjThpUuKuZsKxCZDJHBMjmCMgYivUQh3wQNbWdVa)
+
+![](https://ivanmolto.mypinata.cloud/ipfs/QmRx2VqsKw1R9oebWxm9pbuGRbReYCwrqegDdBtFsVksiR)
+
+### NFT Item Profiler
+
+## NFT Wallet Profiler
+
+## Covalent API endpoints used
+
+- Get NFT token IDs for contract (NFT - Class A endpoint)
+- Get NFT transactions for contract (NFT - Class A endpoint)
+- Get NFT external metadata for contract (NFT - Class A endpoint)
+- Get token balances for address (Balances - Class A endpoint)
 
 # Getting Started with Create React App
 

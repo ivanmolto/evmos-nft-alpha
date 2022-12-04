@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
 import { ArrowCircleRightIcon } from "@heroicons/react/outline";
-
 import { Link } from "react-router-dom";
 import NftLogo from "./NftLogo";
 import NftDescription from "./NftDescription";
@@ -26,14 +25,18 @@ const NftCollection = ({ collection }) => {
   const data = collectionQuery.data;
   if (collectionQuery.isLoading)
     return (
-      <div className="min-h-full font-montserrat">
-        <main className="flex-1 pb-8">
-          <div className="px-4 sm:px-6 lg:max-w-6xl lg:mx-auto lg:px-8">
-            <h2 className="font-bold text-xl">NFT Collection</h2>
-            <div className="py-6 md:flex md:items-center md:justify-between lg:border-t lg:border-eorange"></div>
-            Loading collection...
+      <div className="bg-gray-50 font-montserrat">
+        <div className="mt-1">
+          <h2 className="max-w-6xl mx-auto mt-0 px-4 text-lg leading-6 font-medium text-gray-900 sm:px-6 lg:px-8">
+            NFT Collection
+          </h2>
+          <div>
+            <div className="px-4 sm:px-6 lg:max-w-6xl lg:mx-auto lg:px-8">
+              <div className="py-3 md:flex md:items-center md:justify-between lg:border-t border-eorange lg:border-eorange"></div>
+              Loading collection...
+            </div>
           </div>
-        </main>
+        </div>
       </div>
     );
 
@@ -41,14 +44,18 @@ const NftCollection = ({ collection }) => {
     return <p>Error: {collectionQuery.error.message}</p>;
   if (data === null || data.data === null || data.data.items === null)
     return (
-      <div className="min-h-full font-montserrat">
-        <main className="flex-1 pb-8">
-          <div className="px-4 sm:px-6 lg:max-w-6xl lg:mx-auto lg:px-8">
-            <h2 className="font-bold text-xl">NFT Collection</h2>
-            <div className="py-6 md:flex md:items-center md:justify-between lg:border-t lg:border-eorange"></div>
-            Sorry, no data available for this contract address
+      <div className="bg-gray-50 font-montserrat">
+        <div className="mt-1">
+          <h2 className="max-w-6xl mx-auto mt-0 px-4 text-lg leading-6 font-medium text-gray-900 sm:px-6 lg:px-8">
+            NFT Collection
+          </h2>
+          <div>
+            <div className="px-4 sm:px-6 lg:max-w-6xl lg:mx-auto lg:px-8">
+              <div className="py-3 md:flex md:items-center md:justify-between lg:border-t border-eorange lg:border-eorange"></div>
+              Sorry, no data available for this contract address now
+            </div>
           </div>
-        </main>
+        </div>
       </div>
     );
 

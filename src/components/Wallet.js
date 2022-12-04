@@ -76,7 +76,9 @@ function WalletCollection({ address }) {
               target="_blank"
               className="ml-8 mt-12 text-eorange hover:text-eviolet"
             >
-              {address}
+              {address.slice(0, 6)}
+              {"..."}
+              {address.slice(-4)}
             </a>
           </div>
           <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">

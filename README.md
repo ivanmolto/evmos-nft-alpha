@@ -14,6 +14,10 @@ Unleash your NFT analytics power on Evmos.
 
 [Video Demo]()
 
+## Event
+
+The project has been built during the Evmos-Covalent #OneMillionWallets Hackathon powered by Encode Club. [Learn more here](https://www.encode.club/evmoscovalent-hack)
+
 ## Overview
 
 ### Home

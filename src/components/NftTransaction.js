@@ -32,13 +32,16 @@ const NftTransaction = ({ collection, item }) => {
     );
   if (transactionQuery.isError)
     return <div>Error: {transactionQuery.error.message}</div>;
-  if (data === null)
+  if (
+    data === null ||
+    data.data === null ||
+    data.data.items === null ||
+    data.data.items[0].nft_transactions === null
+  )
     return (
       <div className="min-h-full font-montserrat">
         <main className="flex-1 pb-8">
           <div className="px-4 sm:px-6 lg:max-w-6xl lg:mx-auto lg:px-8">
-            <h2 className="font-bold text-xl">NFT Item</h2>
-            <div className="py-6 md:flex md:items-center md:justify-between lg:border-t lg:border-eorange"></div>
             Sorry, no transactions data available for this NFT item now
           </div>
         </main>
@@ -161,10 +164,10 @@ const NftTransaction = ({ collection, item }) => {
                               {transaction.value_quote === 0 && (
                                 <>
                                   <SwitchHorizontalIcon
-                                    className="h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-eorange"
+                                    className="h-5 w-5 flex-shrink-0 text-eorange group-hover:text-eviolet"
                                     aria-hidden="true"
                                   />
-                                  <p className="truncate text-gray-500 group-hover:text-eorange">
+                                  <p className="truncate text-eorange group-hover:text-eviolet">
                                     Transfer
                                   </p>
                                 </>

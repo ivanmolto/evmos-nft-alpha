@@ -1,3 +1,25 @@
+# NFT Alpha - NFT Data on Evmos
+
+NFT discover made easy with NFT Alpha.
+Unleash your NFT analytics power on Evmos.
+
+- Open an free EVM on-chain data from Covalent on the Evmos blockchain.
+- Go down to the rabbit hole and surface NFTs.
+  NFT collections, items and wallets. All in!
+- Discover opportunities and perform due diligence on the Evmos NFT ecosystem.
+
+[Website - NFT Alpha](https://www.nftalpha.app)
+
+[Project Slides Deck]()
+
+[Video Demo]()
+
+## Overview
+
+![](https://ivanmolto.mypinata.cloud/ipfs/QmUXAuVFJAbhrMs6AUqWr2sVjRvnMySyY5Jgs6mbwJ1AoW)
+
+## Covalent API endpoints
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

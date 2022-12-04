@@ -33,7 +33,7 @@ const NftLogo = ({ collection }) => {
   const data = logoQuery.data;
   if (logoQuery.isLoading) return <div>Loading image...</div>;
   if (logoQuery.isError) return <div>Error: {logoQuery.error.message}</div>;
-  if (data === null)
+  if (data === null || data.data === null || data.data.items === null)
     return (
       <LazyLoadImage
         src={`https://ivanmolto.mypinata.cloud/ipfs/QmbLmd6Zy7AU5oS9Ww6PyHZamV6QT5rF3yEWTSCvkLxLTk`}

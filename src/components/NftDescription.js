@@ -18,9 +18,8 @@ const NftDescription = ({ collection }) => {
   if (descriptionQuery.isLoading) return <div>Loading description...</div>;
   if (descriptionQuery.isError)
     return <div>Error: {descriptionQuery.error.message}</div>;
-  if (data === null) return null;
-  if (data.data === null) return null;
-  if (data.data.items === null) return null;
+  if (data === null || data.data === null || data.data.items === null)
+    return null;
   if (descriptionQuery.isSuccess && data.data.items[0].nft_data === null) {
     return null;
   }

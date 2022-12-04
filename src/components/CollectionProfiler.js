@@ -19,15 +19,15 @@ const CollectionProfiler = () => {
     <div className="font-montserrat">
       <main className="flex-1 flex-col pb-8">
         <div className="mt-1">
-          <h2 className="max-w-6xl mx-auto mt-0 px-1 text-lg leading-6 font-medium text-sky-400 sm:px-6 lg:px-8">
+          <h2 className="max-w-6xl mx-auto mt-0 px-4 text-lg leading-6 font-medium text-sky-400 sm:px-6 lg:px-8">
             NFT Collection Profiler
           </h2>
           <div>
-            <div className="px-1 sm:px-6 lg:max-w-6xl lg:mx-auto lg:px-8">
+            <div className="px-4 sm:px-6 lg:max-w-6xl lg:mx-auto lg:px-8">
               <div className="py-3 md:flex md:items-center md:justify-between lg:border-t border-eorange lg:border-eorange"></div>
             </div>
           </div>
-          <div className="flex-1 px-1 flex justify-between sm:px-6 lg:max-w-6xl lg:mx-auto lg:px-8">
+          <div className="flex-1 px-4 flex justify-between sm:px-6 lg:max-w-6xl lg:mx-auto lg:px-8">
             <form
               onSubmit={submitHandler}
               className="space-y-8 divide-y divide-gray-200"
@@ -56,14 +56,14 @@ const CollectionProfiler = () => {
                         id="nftaddress"
                         autoComplete="nftaddress"
                         placeholder="0x..."
-                        className="shadow-sm focus:ring-eorange focus:border-eorange block w-full sm:text-sm border-eorange rounded-md"
+                        className="shadow-sm focus:ring-eorange focus:border-eorange block w-5/6 sm:w-full sm:text-sm border-eorange rounded-md"
                       />
                     </div>
                   </div>
                   <div className="mt-6">
                     <button
                       type="submit"
-                      className="inline-flex justify-center py-2 px-44 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-eorange hover:bg-eviolet focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-eorange"
+                      className="inline-flex justify-center py-2 px-4 border border-transparent w-5/6 sm:w-full shadow-sm text-sm font-medium rounded-md text-white bg-eorange hover:bg-eviolet focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-eorange"
                     >
                       Submit
                     </button>

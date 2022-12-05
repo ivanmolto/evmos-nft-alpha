@@ -12,7 +12,7 @@ Unleash your NFT analytics power on Evmos.
 
 [Project Slides Deck](https://ivanmolto.mypinata.cloud/ipfs/QmSbgirs8hVHakyT3hv5xqTxq7a4vgk48B48FFaconcDyu)
 
-[Video Demo](https://youtu.be/kSsjYi6MbDk)
+[Video Demo](https://youtu.be/TyV7i-kEk9E)
 
 ## Event
 

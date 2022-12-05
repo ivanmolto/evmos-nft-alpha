@@ -56,7 +56,7 @@ A deep dive on the Token ID. The page displays for a token ID the name of the NF
 
 A form to be filled with the wallet address to find the balance of NFTs in it.
 
-![](https://ivanmolto.mypinata.cloud/ipfs/QmdWSW8eksRwkap5pytwiGuaatKdFAXoUpwAheUs5RMqsi)
+![](https://ivanmolto.mypinata.cloud/ipfs/QmTjNJFA9oKafjWR67kYTte3zqPm7duBHz5P4vpbyVxhVW)
 
 The page displays the avatar of the wallet address, a link to the Evmos EVM Explorer the balance of NFTs in the wallet address.
 

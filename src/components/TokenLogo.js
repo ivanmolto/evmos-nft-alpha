@@ -55,7 +55,7 @@ const TokenLogo = ({ collection, item }) => {
           <LazyLoadImage
             src={
               data.data.items[0].nft_data[0].external_data.image ||
-              `https://ivanmolto.mypinata.cloud/ipfs/QmbLmd6Zy7AU5oS9Ww6PyHZamV6QT5rF3yEWTSCvkLxLTk`
+              `https://ivanmolto.mypinata.cloud/ipfs/QmSYRfysyk5n5YqMN6Zw2fCZdvZsJvhETmhgQKTdAfPbwb`
             }
             alt="NFT item"
             className="rounded-md"

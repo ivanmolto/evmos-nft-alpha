@@ -36,7 +36,7 @@ const NftLogo = ({ collection }) => {
   if (data === null || data.data === null || data.data.items === null)
     return (
       <LazyLoadImage
-        src={`https://ivanmolto.mypinata.cloud/ipfs/QmbLmd6Zy7AU5oS9Ww6PyHZamV6QT5rF3yEWTSCvkLxLTk`}
+        src={`https://ivanmolto.mypinata.cloud/ipfs/QmSYRfysyk5n5YqMN6Zw2fCZdvZsJvhETmhgQKTdAfPbwb`}
         alt="No image available"
         className="rounded-md"
       />
@@ -122,7 +122,7 @@ const NftLogo = ({ collection }) => {
             <LazyLoadImage
               src={
                 data.data.items[0].nft_data[0].external_data.image ||
-                `https://ivanmolto.mypinata.cloud/ipfs/QmbLmd6Zy7AU5oS9Ww6PyHZamV6QT5rF3yEWTSCvkLxLTk`
+                `https://ivanmolto.mypinata.cloud/ipfs/QmSYRfysyk5n5YqMN6Zw2fCZdvZsJvhETmhgQKTdAfPbwb`
               }
               alt="Collection First NFT"
               className="rounded-md"

@@ -10,13 +10,13 @@ Unleash your NFT analytics power on Evmos.
 
 [Website - NFT Alpha](https://www.nftalpha.app)
 
-[Project Slides Deck]()
+[Project Slides Deck](https://ivanmolto.mypinata.cloud/ipfs/QmSbgirs8hVHakyT3hv5xqTxq7a4vgk48B48FFaconcDyu)
 
 [Video Demo]()
 
 ## Event
 
-The project has been built during the Evmos-Covalent #OneMillionWallets Hackathon powered by Encode Club. [Learn more here](https://www.encode.club/evmoscovalent-hack)
+The project has been built during the [Evmos](https://evmos.org)-[Covalent](https://covalenthq.com) #OneMillionWallets Hackathon powered by Encode Club. [Learn more here](https://www.encode.club/evmoscovalent-hack)
 
 ## Overview
 

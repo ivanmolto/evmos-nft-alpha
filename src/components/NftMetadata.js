@@ -35,6 +35,7 @@ const NftMetadata = ({ collection, item }) => {
     );
   if (metadataQuery.isError)
     return <div>Error: {metadataQuery.error.message}</div>;
+  console.log(data);
   if (data === null || data.data === null || data.data.items === null)
     return (
       <div className="bg-gray-50 font-montserrat">
@@ -154,32 +155,34 @@ const NftMetadata = ({ collection, item }) => {
               <TokenLogo collection={collection} item={item} />
             </div>
           </div>
-          <div className="mt-2 lg:col-start-1 lg:row-start-2 lg:max-w-lg lg:self-start">
-            <section aria-labelledby="information-heading">
-              <h2 className="mb-4 text-lg leading-6 font-medium text-gray-900">
-                Attributes
-              </h2>
-              <div className="flex-1 flex justify-between lg:max-w-6xl lg:mx-auto">
-                <ul className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 ">
-                  {data.data.items[0].nft_data[0].external_data.attributes.map(
-                    (attribute, index) => (
-                      <li
-                        key={index}
-                        className="px-2 py-1.5 col-span-1 flex flex-col rounded-lg bg-white text-center shadow"
-                      >
-                        <div className="font-medium text-sm text-gray-900">
-                          {attribute.trait_type}
-                        </div>
-                        <div className="mt-1 text-sm text-gray-500 truncate">
-                          {attribute.value}
-                        </div>
-                      </li>
-                    )
-                  )}
-                </ul>
-              </div>
-            </section>
-          </div>
+          {data.data.items[0].nft_data[0].external_data.attributes !== null && (
+            <div className="mt-2 lg:col-start-1 lg:row-start-2 lg:max-w-lg lg:self-start">
+              <section aria-labelledby="information-heading">
+                <h2 className="mb-4 text-lg leading-6 font-medium text-gray-900">
+                  Attributes
+                </h2>
+                <div className="flex-1 flex justify-between lg:max-w-6xl lg:mx-auto">
+                  <ul className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 ">
+                    {data.data.items[0].nft_data[0].external_data.attributes.map(
+                      (attribute, index) => (
+                        <li
+                          key={index}
+                          className="px-2 py-1.5 col-span-1 flex flex-col rounded-lg bg-white text-center shadow"
+                        >
+                          <div className="font-medium text-sm text-gray-900">
+                            {attribute.trait_type}
+                          </div>
+                          <div className="mt-1 text-sm text-gray-500 truncate">
+                            {attribute.value}
+                          </div>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
+              </section>
+            </div>
+          )}
         </div>
       </div>
     </div>

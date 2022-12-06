@@ -42,7 +42,12 @@ const NftCollection = ({ collection }) => {
 
   if (collectionQuery.isError)
     return <p>Error: {collectionQuery.error.message}</p>;
-  if (data === null || data.data === null || data.data.items === null)
+  if (
+    data === null ||
+    data.data === null ||
+    data.data.items.length === 0 ||
+    data.data.items === null
+  )
     return (
       <div className="bg-gray-50 font-montserrat">
         <div className="mt-1">
@@ -165,6 +170,7 @@ const NftCollection = ({ collection }) => {
         </div>
       </div>
     );
+  console.log(data);
   return (
     <div className="bg-gray-50 font-montserrat">
       <div className="mt-1">

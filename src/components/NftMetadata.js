@@ -105,7 +105,7 @@ const NftMetadata = ({ collection, item }) => {
                 </p>
               </div>
               <div className="flex items-center">
-                <p className="text-lg text-gray-900 sm:text-xl">
+                <p className="text-lg text-gray-900 sm:text-xl truncate">
                   Token ID: <span className="font-semibold">{item}</span>
                   <br />
                 </p>

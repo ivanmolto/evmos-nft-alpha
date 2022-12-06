@@ -26,6 +26,7 @@ const TokenLogo = ({ collection, item }) => {
     data === null ||
     data.data === null ||
     data.data.items === null ||
+    data.data.items[0].nft_data === null ||
     data.data.items[0].nft_data[0] === null ||
     data.data.items[0].nft_data[0].external_data === null
   )

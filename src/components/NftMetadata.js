@@ -81,29 +81,36 @@ const NftMetadata = ({ collection, item }) => {
                 NFT Item information
               </h2>
               <div className="flex items-center">
-                <p className="text-xl text-gray-900 sm:text-3xl font-semibold">
-                  {data.data.items[0].nft_data[0].external_data.name ||
-                    "Name n/a"}
-                </p>
+                {data.data.items[0].nft_data !== null && (
+                  <p className="text-xl text-gray-900 sm:text-3xl font-semibold">
+                    {data.data.items[0].nft_data[0].external_data.name ||
+                      "Name n/a"}
+                  </p>
+                )}
               </div>
-              <div className="flex items-center">
-                <p className="text-lg text-gray-900 sm:text-xl">
-                  Owned by{" "}
-                  <a
-                    href={`https://evm.evmos.org/address/${data.data.items[0].nft_data[0].owner_address}`}
-                    rel="noreferrer"
-                    target="_blank"
-                    alt="Contract address link explorer"
-                    className="text-eorange hover:text-eviolet"
-                  >
-                    <span className="font-semibold">
-                      {data.data.items[0].nft_data[0].owner_address.slice(0, 6)}
-                      {"..."}
-                      {data.data.items[0].nft_data[0].owner_address.slice(-4)}
-                    </span>
-                  </a>
-                </p>
-              </div>
+              {data.data.items[0].nft_data !== null && (
+                <div className="flex items-center">
+                  <p className="text-lg text-gray-900 sm:text-xl">
+                    Owned by{" "}
+                    <a
+                      href={`https://evm.evmos.org/address/${data.data.items[0].nft_data[0].owner_address}`}
+                      rel="noreferrer"
+                      target="_blank"
+                      alt="Contract address link explorer"
+                      className="text-eorange hover:text-eviolet"
+                    >
+                      <span className="font-semibold">
+                        {data.data.items[0].nft_data[0].owner_address.slice(
+                          0,
+                          6
+                        )}
+                        {"..."}
+                        {data.data.items[0].nft_data[0].owner_address.slice(-4)}
+                      </span>
+                    </a>
+                  </p>
+                </div>
+              )}
               <div className="flex items-center">
                 <p className="text-lg text-gray-900 sm:text-xl truncate">
                   Token ID: <span className="font-semibold">{item}</span>
@@ -155,34 +162,36 @@ const NftMetadata = ({ collection, item }) => {
               <TokenLogo collection={collection} item={item} />
             </div>
           </div>
-          {data.data.items[0].nft_data[0].external_data.attributes !== null && (
-            <div className="mt-2 lg:col-start-1 lg:row-start-2 lg:max-w-lg lg:self-start">
-              <section aria-labelledby="information-heading">
-                <h2 className="mb-4 text-lg leading-6 font-medium text-gray-900">
-                  Attributes
-                </h2>
-                <div className="flex-1 flex justify-between lg:max-w-6xl lg:mx-auto">
-                  <ul className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 ">
-                    {data.data.items[0].nft_data[0].external_data.attributes.map(
-                      (attribute, index) => (
-                        <li
-                          key={index}
-                          className="px-2 py-1.5 col-span-1 flex flex-col rounded-lg bg-white text-center shadow"
-                        >
-                          <div className="font-medium text-sm text-gray-900">
-                            {attribute.trait_type}
-                          </div>
-                          <div className="mt-1 text-sm text-gray-500 truncate">
-                            {attribute.value}
-                          </div>
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-              </section>
-            </div>
-          )}
+          {data.data.items[0].nft_data !== null &&
+            data.data.items[0].nft_data[0].external_data.attributes !==
+              null && (
+              <div className="mt-2 lg:col-start-1 lg:row-start-2 lg:max-w-lg lg:self-start">
+                <section aria-labelledby="information-heading">
+                  <h2 className="mb-4 text-lg leading-6 font-medium text-gray-900">
+                    Attributes
+                  </h2>
+                  <div className="flex-1 flex justify-between lg:max-w-6xl lg:mx-auto">
+                    <ul className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 ">
+                      {data.data.items[0].nft_data[0].external_data.attributes.map(
+                        (attribute, index) => (
+                          <li
+                            key={index}
+                            className="px-2 py-1.5 col-span-1 flex flex-col rounded-lg bg-white text-center shadow"
+                          >
+                            <div className="font-medium text-sm text-gray-900">
+                              {attribute.trait_type}
+                            </div>
+                            <div className="mt-1 text-sm text-gray-500 truncate">
+                              {attribute.value}
+                            </div>
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </div>
+                </section>
+              </div>
+            )}
         </div>
       </div>
     </div>

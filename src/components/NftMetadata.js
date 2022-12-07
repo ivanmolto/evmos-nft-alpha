@@ -35,7 +35,6 @@ const NftMetadata = ({ collection, item }) => {
     );
   if (metadataQuery.isError)
     return <div>Error: {metadataQuery.error.message}</div>;
-  console.log(data);
   if (data === null || data.data === null || data.data.items === null)
     return (
       <div className="bg-gray-50 font-montserrat">

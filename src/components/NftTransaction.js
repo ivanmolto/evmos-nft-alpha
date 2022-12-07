@@ -37,7 +37,8 @@ const NftTransaction = ({ collection, item }) => {
     data.data === null ||
     data.data.items === null ||
     data.data.items[0].nft_transactions === null ||
-    data.data.items[0].nft_transactions.length === 0
+    data.data.items[0].nft_transactions.length === 0 ||
+    typeof data.data.items[0].nft_transactions === "undefined"
   )
     return (
       <div className="min-h-full font-montserrat">

@@ -93,8 +93,29 @@ const Layout = () => {
                       </button>
                     </div>
                   </Transition.Child>
-                  <div className="flex-shrink-0 flex items-center px-4 text-white">
-                    nft alpha
+                  <div className="flex-shrink-0 flex items-center px-4 font-semibold text-gray-900">
+                    <svg
+                      className="h-6 w-6"
+                      height="100%"
+                      strokeMiterlimit="10"
+                      version="1.1"
+                      viewBox="0 0 44 42"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs />
+                      <g>
+                        <path
+                          d="M22.0217 35.9582L7.02169 15.9582L11.5217 5.95815L32.5217 5.95815L37.0217 15.9582L22.0217 35.9582ZM17.8217 14.7082L26.2217 14.7082L23.4092 8.45815L20.6342 8.45815L17.8217 14.7082ZM20.8967 30.5832L20.8967 17.2082L10.8842 17.2082L20.8967 30.5832ZM23.1467 30.5832L33.1592 17.2082L23.1467 17.2082L23.1467 30.5832ZM28.7342 14.7082L33.8342 14.7082L31.0217 8.45815L25.9217 8.45815L28.7342 14.7082ZM10.2092 14.7082L15.3092 14.7082L18.1217 8.45815L13.0217 8.45815L10.2092 14.7082Z"
+                          fill="#000000"
+                          fillRule="nonzero"
+                          opacity="1"
+                          stroke="none"
+                        />
+                      </g>
+                    </svg>
+
+                    <span className="text-2xl">NFT Alpha</span>
                   </div>
                   <nav
                     className="mt-5 flex-shrink-0 h-full divide-y divide-eviolet overflow-y-auto"
